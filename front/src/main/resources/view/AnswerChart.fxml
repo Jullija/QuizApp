@@ -1,0 +1,18 @@
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane prefWidth="650.0" prefHeight="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.edu.agh.to2.example.presenter.chart.AnswerChartPresenter">
+    <center>
+        <BarChart fx:id="answersBarChart" >
+            <xAxis>
+                <CategoryAxis label="answer"/>
+            </xAxis>
+            <yAxis>
+                <NumberAxis label="choice [%]"/>
+            </yAxis>
+        </BarChart>
+    </center>
+</BorderPane>
+

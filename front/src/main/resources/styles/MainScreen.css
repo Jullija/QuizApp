@@ -1,0 +1,19 @@
+.quiz-name-label {
+    -fx-background-color: white;
+    -fx-padding: 2 5 2 5;
+    -fx-background-radius: 3;
+    -fx-border-radius: 3;
+    -fx-border-width: 1;
+    -fx-border-color: lightgray;
+    -fx-border-style: solid;
+}
+
+.strategy-label {
+    -fx-background-color: white;
+    -fx-padding: 2 5 2 5;
+    -fx-background-radius: 3;
+    -fx-border-radius: 3;
+    -fx-border-width: 1;
+    -fx-border-color: lightgray;
+    -fx-border-style: solid;
+}

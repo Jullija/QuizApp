@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane prefHeight="600.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.edu.agh.to2.example.controller.MainScreenController" stylesheets="@../styles/MainScreen.css">
+    <!-- QUIZ LIST -->
+    <left>
+        <TableView fx:id="quizTable" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <columns>
+                <TableColumn fx:id="quizNameColumn" prefWidth="75.0" text="quiz" />
+            </columns>
+            <columnResizePolicy>
+                <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+            </columnResizePolicy>
+        </TableView>
+    </left>
+
+    <!-- FORM LIST -->
+    <center>
+        <TableView fx:id="formsTable" prefWidth="750.0" BorderPane.alignment="CENTER">
+            <columns>
+                <TableColumn fx:id="nickColumn" prefWidth="75.0" text="nick" />
+                <TableColumn fx:id="pointsColumn" prefWidth="75.0" text="points" />
+                <TableColumn fx:id="timestampColumn" prefWidth="75.0" text="time" />
+                <TableColumn fx:id="endTimeColumn" prefWidth="75.0" text="end time" />
+                <TableColumn fx:id="awardColumn" prefWidth="75.0" text="award" />
+            </columns>
+            <columnResizePolicy>
+                <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+            </columnResizePolicy>
+        </TableView>
+    </center>
+
+    <bottom>
+        <HBox StackPane.alignment="CENTER" HBox.hgrow="ALWAYS" VBox.vgrow="ALWAYS">
+            <HBox alignment="CENTER_LEFT">
+                <Label prefWidth="160.0" fx:id="quizNameLabel" styleClass="quiz-name-label">
+                    <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                    </HBox.margin>
+                </Label>
+
+                <Label prefWidth="160.0" fx:id="strategyLabel" styleClass="strategy-label">
+                    <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                    </HBox.margin>
+                </Label>
+            </HBox>
+
+            <Region HBox.hgrow="ALWAYS" />
+
+            <HBox alignment="CENTER_RIGHT">
+                <Button fx:id="addQuizButton" alignment="TOP_CENTER" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleAddQuizAction" text="add quiz">
+                    <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                    </HBox.margin>
+                </Button>
+
+                <Button fx:id="exportQuizButton" alignment="TOP_CENTER" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleExportQuizAction" text="export quiz">
+                    <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                    </HBox.margin>
+                </Button>
+
+                <Button fx:id="showStatisticsButton" alignment="TOP_CENTER" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleShowStatisticsAction" text="show statistics">
+                    <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                    </HBox.margin>
+                </Button>
+
+                <Button fx:id="changeStrategyButton" alignment="TOP_CENTER" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleChangeStrategyAction" text="change strategy">
+                    <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                    </HBox.margin>
+                </Button>
+
+                <Button fx:id="addAwardButton" alignment="TOP_CENTER" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleAddAwardAction" text="add award">
+                    <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                    </HBox.margin>
+                </Button>
+
+                <Button fx:id="addChestButton" alignment="TOP_CENTER" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleAddChestAction" text="add chest">
+                    <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                    </HBox.margin>
+                </Button>
+
+                <Button fx:id="addStrategyButton" alignment="TOP_CENTER" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleShowAddStrategyAction" text="add strategy">
+                    <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                    </HBox.margin>
+                </Button>
+
+                <Button fx:id="editAwardButton" alignment="TOP_CENTER" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleEditAwardAction" text="edit award">
+                    <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                    </HBox.margin>
+                </Button>
+            </HBox>
+        </HBox>
+    </bottom>
+</BorderPane>
